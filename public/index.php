@@ -108,7 +108,7 @@ $app->post('/login', function (Request $request, Response $response, $args) {
     $response->getBody()->write(json_encode($credentials, JSON_PRETTY_PRINT));
 
     return $response->withHeader('Content-Type', 'application/json');
-})->add($jsonBodyParser);;
+})->add($jsonBodyParser);
 
 $app->get('/database', function (Request $request, Response $response, $args) {
     $database_model = new DatabaseModel();
