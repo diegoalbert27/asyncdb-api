@@ -7,7 +7,7 @@ use App\Libraries\Database;
 class DatabaseModel
 {
     public $type = 'BASE TABLE';
-    public $db = 'Sventas';
+    public $db = 'Cventas';
 
     public function findAll() {
         try {
